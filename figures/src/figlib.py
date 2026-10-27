@@ -4,10 +4,23 @@ Coordinate system: every figure is 1000 units wide, printed at 7.0 in
 (double-column width), so 1 unit = 0.504 pt.  Font size 16 -> ~8 pt.
 """
 import math
+import os
 from xml.sax.saxutils import escape
+
+# ---------------------------------------------------------------- language
+# FIG_LANG=zh renders every label through the zh.py dictionary into out/zh/;
+# FIG_LANG=collect lists the strings a figure uses instead of saving it.
+LANG = os.environ.get("FIG_LANG", "en")
+_ZH = {}
+_SEEN = []
+if LANG == "zh":
+    from zh import ZH as _ZH
 
 # ---------------------------------------------------------------- style
 SANS = "Arial, Helvetica, 'Liberation Sans', sans-serif"
+if LANG == "zh":
+    SANS = ("Arial, Helvetica, 'Liberation Sans', 'Noto Sans CJK SC', 'Source Han Sans SC', "
+            "'Microsoft YaHei', 'PingFang SC', sans-serif")
 SERIF = "'Times New Roman', Times, 'Liberation Serif', serif"
 
 INK = "#1F2430"      # main text
@@ -122,9 +135,23 @@ def _parse(s, math_mode=False, shift=0, upright=False, bold=False, out=None):
     return merged
 
 
+def _cjk(ch):
+    return "\u2e80" <= ch <= "\u9fff" or "\u3000" <= ch <= "\u303f" or "\uff00" <= ch <= "\uffef"
+
+
+def tr(s):
+    """Translate a label for the current language (exact-string lookup)."""
+    if LANG == "collect" and s.strip() and s not in _SEEN:
+        _SEEN.append(s)
+    return _ZH.get(s, s) if LANG == "zh" else s
+
+
 def text(x, y, s, size=FS, anchor="middle", color=INK, weight="normal",
          italic=False, family=None, opacity=None, rotate=None, spacing=None):
     """Return an SVG <text> element with rich-text tspans."""
+    s = tr(s)
+    if italic and any(_cjk(ch) for ch in s):
+        italic = False          # no fake-oblique CJK
     segs = _parse(s)
     attrs = [f'x="{f(x)}"', f'y="{f(y)}"', f'font-size="{f(size)}"',
              f'text-anchor="{anchor}"', f'fill="{color}"',
@@ -169,10 +196,13 @@ def text(x, y, s, size=FS, anchor="middle", color=INK, weight="normal",
 def est_width(s, size=FS):
     """Rough width estimate of rendered rich text."""
     w = 0.0
+    s = _ZH.get(s, s) if LANG == "zh" else s
     for txt, fam, ital, bold, sh in _parse(s):
         fs = size * (0.7 if sh else 1.0)
         for ch in txt:
-            if ch in "il.,:;|!'()[]{} ":
+            if _cjk(ch):
+                k = 1.0
+            elif ch in "il.,:;|!'()[]{} ":
                 k = 0.30
             elif ch in "mwMW":
                 k = 0.85
@@ -439,6 +469,15 @@ class Fig:
         return "\n".join([head, defs, bg] + self.items + ["</svg>"])
 
     def save(self, path):
+        if LANG == "collect":
+            name = os.path.splitext(os.path.basename(path))[0]
+            os.makedirs("out/strings", exist_ok=True)
+            with open(f"out/strings/{name}.txt", "w", encoding="utf-8") as fh:
+                fh.write("\n".join(_SEEN))
+            return
+        if LANG == "zh":
+            path = path.replace("out/", "out/zh/", 1)
+            os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(self.svg())
 

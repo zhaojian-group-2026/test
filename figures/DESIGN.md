@@ -1,6 +1,6 @@
 # 论文配图：绘图思路与统一视觉规范
 
-状态：**5 张图已按配色 A 完成**，输出在 `out/`（`.svg` 可编辑，`.pdf` 矢量用于 LaTeX，`.png` 预览）。
+状态：**5 张图已按配色 A 完成**，英文版输出在 `out/`，中文版在 `out/zh/`（`.svg` 可编辑，`.pdf` 矢量用于 LaTeX，`.png` 预览）。
 第一轮结构草图保留在 `out/wire/`（旧配色，仅作记录）。
 
 | 图 | 文件 | 生成脚本 |
@@ -41,6 +41,10 @@ python3 src/fetch_assets.py          # 下载 / 裁剪第三方图片到 assets/
 python3 src/sim_events.py            # 图5 的事件相机仿真
 for f in fig1_dynamic fig2_pi05 fig3_async fig4_flow fig5_events; do python3 src/$f.py; done
 node src/render.js out/fig*.svg      # 生成 .pdf 与 .png
+
+# 中文版：同一套脚本，文字经 src/zh.py 词典替换，输出到 out/zh/
+for f in fig1_dynamic fig2_pi05 fig3_async fig4_flow fig5_events; do FIG_LANG=zh python3 src/$f.py; done
+node src/render.js out/zh/*.svg
 ```
 
 ## 第一轮绘图思路（记录）
@@ -83,3 +87,6 @@ node src/render.js out/fig*.svg      # 生成 .pdf 与 .png
 - (c) DVS + SNN：脉冲序列 → LIF 积分 / 发放 / 复位 → 仅在脉冲到达时做 AC。
 - 可选脚注：$E_{MAC}≈4.6$ pJ，$E_{AC}≈0.9$ pJ（32-bit FP，45 nm，Horowitz 2014）。
 - 参考：[event_utils](https://github.com/TimoStoff/event_utils) 事件表示图、[Gallego et al. 事件相机综述](https://arxiv.org/abs/1904.08405)。
+
+中文字体：中文用思源黑体 / Noto Sans CJK SC（找不到时依次回退到微软雅黑、苹方），英文和数字仍用 Arial，公式用 Times。
+修改中文措辞只需改 `src/zh.py` 对应条目后重新运行；`FIG_LANG=collect` 可列出某张图用到的全部英文字符串。
