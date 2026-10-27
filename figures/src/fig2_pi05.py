@@ -31,7 +31,7 @@ F.rect(VX0, VY - 34, VX1 - VX0, 68, rx=8, fill=BLUE[1], stroke=BLUE[0], sw=1.3)
 pills(VX0 + 16, VY - 24, 23, BLUE, fills=[WHITE] * 23)
 pills(VX0 + 16, VY + 24, 23, BLUE, fills=[WHITE] * 23)
 F.rect(VX0 - 6, VY - 13, VX1 - VX0 + 12, 26, rx=6, fill=WHITE, stroke=BLUE[0], sw=1.1)
-F.text((VX0 + VX1) / 2, VY + 5, "VLM backbone   PaliGemma: SigLIP (400M) + Gemma (2B)", size=FS_S,
+F.text((VX0 + VX1) / 2, VY + 5, "VLM backbone", size=FS_S,
        weight="bold", color=BLUE_D)
 
 # inputs: 4 real camera views + text chips
@@ -84,7 +84,7 @@ F.rect(AX0, VY - 34, AX1 - AX0, 68, rx=8, fill=ORANGE[1], stroke=ORANGE[0], sw=1
 pills(AX0 + 16, VY - 24, 6, ORANGE)
 pills(AX0 + 16, VY + 24, 6, GREY, fills=["#E5E7EB"] * 6)
 F.rect(AX0 - 6, VY - 13, AX1 - AX0 + 12, 26, rx=6, fill=WHITE, stroke=ORANGE[0], sw=1.1)
-F.text(AC, VY + 5, "action expert (300M)", size=FS_S, weight="bold", color=ORANGE_D)
+F.text(AC, VY + 5, "action expert", size=FS_S, weight="bold", color=ORANGE_D)
 for dy in (-6, 6):   # shared attention to the cached prefix KV
     F.line(VX1 + 6, VY + dy, AX0 - 6, VY + dy, stroke=BLUE[0], sw=1.0, dash="2 3")
 
@@ -121,7 +121,7 @@ for i, lab in enumerate(labs):
     F.rect(x, OY - 12, 42, 24, rx=5, fill=ORANGE[1] if lab != "…" else WHITE, stroke=ORANGE[0], sw=1.1)
     F.text(x + 21, OY + 5, lab, size=FS_XS, color=INK)
 F.badge(EX - 28, OY, "2", BLUE, r=8, size=11)
-F.text(EX - 10, OY - 19, "action chunk $A^{1}$, H = 50", size=FS_XS, color=ORANGE_D, weight="bold", anchor="start")
+F.text(EX - 10, OY - 19, "action chunk $A^{1}$ (H steps)", size=FS_XS, color=ORANGE_D, weight="bold", anchor="start")
 
 # ------------------------------------------------------------ A^tau along the loop (bridge to Fig. 4)
 rng = np.random.default_rng(3)

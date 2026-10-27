@@ -54,7 +54,7 @@
 <rect x="534" y="234" width="17" height="8" rx="4" fill="#FFFFFF" stroke="#3D6FA5" stroke-width="1"/>
 <rect x="558" y="234" width="17" height="8" rx="4" fill="#FFFFFF" stroke="#3D6FA5" stroke-width="1"/>
 <rect x="8" y="201" width="596" height="26" rx="6" fill="#FFFFFF" stroke="#3D6FA5" stroke-width="1.1"/>
-<text x="306" y="219" font-size="14" text-anchor="middle" fill="#2E5A8C" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">VLM backbone   PaliGemma: SigLIP (400M) + Gemma (2B)</text>
+<text x="306" y="219" font-size="14" text-anchor="middle" fill="#2E5A8C" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">VLM backbone</text>
 <polygon points="22,280 72,280 65,256 29,256" fill="#E5EDF6" stroke="#3D6FA5" stroke-width="1.1" stroke-linejoin="round"/>
 <text x="47" y="272" font-size="11" text-anchor="middle" fill="#2E5A8C" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">ViT</text>
 <line x1="47" y1="256" x2="47" y2="248" stroke="#4B5563" stroke-width="1.1" stroke-linecap="round"/>
@@ -107,7 +107,7 @@
 <rect x="748" y="234" width="17" height="8" rx="4" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1"/>
 <rect x="772" y="234" width="17" height="8" rx="4" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1"/>
 <rect x="630" y="201" width="182" height="26" rx="6" fill="#FFFFFF" stroke="#DD8A3E" stroke-width="1.1"/>
-<text x="721" y="219" font-size="14" text-anchor="middle" fill="#B86A22" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">action expert (300M)</text>
+<text x="721" y="219" font-size="14" text-anchor="middle" fill="#B86A22" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">action expert</text>
 <line x1="604" y1="208" x2="630" y2="208" stroke="#3D6FA5" stroke-width="1" stroke-linecap="round" stroke-dasharray="2 3"/>
 <line x1="604" y1="220" x2="630" y2="220" stroke="#3D6FA5" stroke-width="1" stroke-linecap="round" stroke-dasharray="2 3"/>
 <rect x="625" y="294" width="124" height="24" rx="5" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="1.1"/>
@@ -139,7 +139,7 @@
 <text x="772" y="43" font-size="12.5" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve"><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">a</tspan><tspan dy="3.25" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">+</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">H</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">-1</tspan><tspan dy="-3.25"></tspan></text>
 <circle cx="595" cy="38" r="8" fill="#3D6FA5"/>
 <text x="595" y="41.96" font-size="11" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">2</text>
-<text x="613" y="19" font-size="12.5" text-anchor="start" fill="#B86A22" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">action chunk <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">1</tspan><tspan dy="4.5">, H = 50</tspan></text>
+<text x="613" y="19" font-size="12.5" text-anchor="start" fill="#B86A22" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">action chunk <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">1</tspan><tspan dy="4.5"> (H steps)</tspan></text>
 <text x="937" y="24" font-size="12.5" text-anchor="middle" fill="#5F6673" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">one action dim.</text>
 <text x="937" y="38" font-size="12.5" text-anchor="middle" fill="#5F6673" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">of <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan dy="4.5"> along the loop</tspan></text>
 <rect x="884" y="50" width="106" height="36" rx="4" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
