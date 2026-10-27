@@ -1,35 +1,50 @@
 # 论文配图：绘图思路与统一视觉规范
 
-状态：**结构草图阶段，等待确认风格与结构后再完整绘制。**
-结构草图在 `out/wire/`，生成脚本在 `src/`。
+状态：**5 张图已按配色 A 完成**，输出在 `out/`（`.svg` 可编辑，`.pdf` 矢量用于 LaTeX，`.png` 预览）。
+第一轮结构草图保留在 `out/wire/`（旧配色，仅作记录）。
 
-## 统一视觉规范（5 张图共用）
+| 图 | 文件 | 生成脚本 |
+| --- | --- | --- |
+| 图1 动态任务 + 延迟 | `out/fig1_dynamic.*` | `src/fig1_dynamic.py` |
+| 图2 VLA 结构 + 10 步去噪回环 | `out/fig2_pi05.*` | `src/fig2_pi05.py` |
+| 图3 异步慢/快系统四种接口 | `out/fig3_async.*` | `src/fig3_async.py` |
+| 图4 Flow matching 与一步生成 | `out/fig4_flow.*` | `src/fig4_flow.py` |
+| 图5 帧相机 / DVS / SNN | `out/fig5_events.*` | `src/fig5_events.py`（数据来自 `src/sim_events.py`） |
+
+图中使用的第三方图片（请在图注中注明）：
+
+| 图 | 内容 | 来源 |
+| --- | --- | --- |
+| 图1 (a)(b)(c) | 动态任务实拍 | AHEAD — Syed et al., 2026, arXiv:2606.02486, Fig. 1 |
+| 图2 | 四路相机画面 | π0.5 — Physical Intelligence et al., 2025, arXiv:2504.16054, Fig. 5 |
+| 图5 | 仿真背景（厨房照片） | π0.5 — arXiv:2504.16054, Fig. 6（第一张 Mock Kitchen）；运动小球、RGB 模糊帧与 DVS 事件均为仿真生成 |
+
+图片由 `src/fetch_assets.py` 下载到 `assets/`（不入库）；把同名文件换成你们自己的照片后重新运行脚本即可替换。
+
+## 统一视觉规范（配色 A：蓝 + 橙 + 灰）
 
 | 项目 | 规范 |
 | --- | --- |
 | 画布 | 宽 1000 单位 = 7.0 in（双栏通栏），高度按内容定 |
 | 字体 | 正文 Arial / Helvetica，数学变量 Times 斜体 |
-| 字号 | 子图标题 9 pt 粗体；模块名 8 pt 粗体；次要文字 7 pt 灰；注释最小 6.3 pt |
-| 模块 | 浅色填充 + 同色深描边，圆角 6–10 |
-| 子图背景 | 浅灰圆角底板 `#F6F7F9`，左上角 `(a) 标题` |
-| 箭头 | 实线：数据流；虚线：反馈 / 可选；粗紫线：慢→快接口；橙色点线：规划轨迹 |
-| 插画 | 扁平侧视，机械臂为灰色胶囊连杆 + 深色关节，全文同一造型 |
-| 符号约定 | flow matching 统一用 τ = 0 为噪声、τ = 1 为动作：$x_τ=(1-τ)ε+τA$，目标速度 $A-ε$ |
+| 颜色 | 每张图最多 2 个色相 + 灰：蓝 `#3D6FA5` = 慢系统 / VLM / 感知；橙 `#DD8A3E` = 快系统 / 动作；其余灰；红 `#C0392B` 只用于 1 处关键约束 |
+| 事件极性 | ON = 橙，OFF = 蓝 |
+| 子图 | 白底 + 细灰边框，左上角 `(a) 标题` |
+| 信息粒度 | 示意图不写具体模型名 / 参数量，代表工作写在正文或图注 |
+| 符号约定 | flow matching 统一 τ = 0 噪声 → τ = 1 动作：$x_τ=(1-τ)ε+τA$，目标速度 $A-ε$ |
 
-语义配色（贯穿全文，同一概念同一颜色）：
+## 构建
 
-| 颜色 | 描边 / 填充 | 含义 |
-| --- | --- | --- |
-| 蓝 | `#2F6DB5` / `#E4EEF9` | 感知、视觉、图像 token |
-| 紫 | `#6C4FB8` / `#EEE9F8` | 慢系统、VLM、规划 |
-| 橙 | `#D9772B` / `#FCEEDF` | 快系统、动作专家、执行 |
-| 绿 | `#3B9A5F` / `#E4F3E9` | 语言 / 状态 token |
-| 青 | `#178A87` / `#DFF2F1` | 脉冲 / 神经形态（SNN） |
-| 灰 | `#8A919E` / `#EEF0F3` | 噪声、中性元素 |
-| 红 | `#C8423B` | 关键约束 / 警示（如“收缩仅在观测固定时成立”） |
-| 红 / 蓝点 | `#D6453D` / `#2F5FC4` | 事件极性 ON / OFF |
+```bash
+cd figures
+python3 src/fetch_assets.py          # 下载 / 裁剪第三方图片到 assets/
+python3 src/sim_events.py            # 图5 的事件相机仿真
+for f in fig1_dynamic fig2_pi05 fig3_async fig4_flow fig5_events; do python3 src/$f.py; done
+node src/render.js out/fig*.svg      # 生成 .pdf 与 .png
+```
 
-## 各图绘图思路
+## 第一轮绘图思路（记录）
+
 
 ### 图1 动态任务示意图
 - 上排三栏：(a) 传送带分拣、(b) 运动物体接取、(c) 乒乓球击打，统一侧视插画。
@@ -68,11 +83,3 @@
 - (c) DVS + SNN：脉冲序列 → LIF 积分 / 发放 / 复位 → 仅在脉冲到达时做 AC。
 - 可选脚注：$E_{MAC}≈4.6$ pJ，$E_{AC}≈0.9$ pJ（32-bit FP，45 nm，Horowitz 2014）。
 - 参考：[event_utils](https://github.com/TimoStoff/event_utils) 事件表示图、[Gallego et al. 事件相机综述](https://arxiv.org/abs/1904.08405)。
-
-## 构建
-
-```bash
-cd figures
-python3 src/styleguide.py && python3 src/wireframes.py
-node src/render.js out/wire/*.svg     # 输出同名 .pdf（矢量，7 in 宽）与 .png（预览）
-```

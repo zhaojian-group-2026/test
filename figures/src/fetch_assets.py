@@ -50,3 +50,21 @@ def _pi05_cams():
 
 
 _pi05_cams()
+
+
+# pi0.5 (arXiv:2504.16054), Fig. 6: first "Mock Kitchens" photo, background for the Fig. 5 event simulation
+def _pi05_kitchen():
+    import io
+    from PIL import Image
+    dst = os.path.join(here, "fig5_bg.png")
+    if os.path.exists(dst):
+        return
+    url = "https://arxiv.org/html/2504.16054v1/visualize_eval_envs.png"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        im = Image.open(io.BytesIO(r.read())).convert("RGB")
+    im.crop((0, 0, 332, 247)).save(dst)
+    print("cropped pi0.5 kitchen photo")
+
+
+_pi05_kitchen()
