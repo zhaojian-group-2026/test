@@ -11,22 +11,25 @@ SANS = "Arial, Helvetica, 'Liberation Sans', sans-serif"
 SERIF = "'Times New Roman', Times, 'Liberation Serif', serif"
 
 INK = "#1F2430"      # main text
-SUB = "#5B6170"      # secondary text
-LINE = "#3F4652"     # arrows / connectors
-GRID = "#C9CED6"     # light borders
-PANEL = "#F6F7F9"    # panel background
+SUB = "#5F6673"      # secondary text
+LINE = "#4B5563"     # arrows / connectors
+GRID = "#D1D5DB"     # light borders
+PANEL = "#F3F4F6"    # light neutral fill
 WHITE = "#FFFFFF"
-RED = "#C8423B"      # caution / emphasis
+RED = "#C0392B"      # the single key constraint per figure
 
-# semantic colour pairs: (stroke, light fill)
-BLUE = ("#2F6DB5", "#E4EEF9")     # perception / vision
-PURPLE = ("#6C4FB8", "#EEE9F8")   # slow system / VLM / planning
-ORANGE = ("#D9772B", "#FCEEDF")   # action / fast system / execution
-GREEN = ("#3B9A5F", "#E4F3E9")    # language / state tokens
-TEAL = ("#178A87", "#DFF2F1")     # spiking / neuromorphic
-GREY = ("#8A919E", "#EEF0F3")     # noise / neutral
-EV_ON = "#D6453D"                 # event polarity +
-EV_OFF = "#2F5FC4"                # event polarity -
+# Palette A: two hues + greys.  (stroke, light fill)
+BLUE = ("#3D6FA5", "#E5EDF6")     # primary: slow system / VLM / perception
+ORANGE = ("#DD8A3E", "#FBEEE1")   # accent: fast system / action
+GREY = ("#9CA3AF", "#F3F4F6")     # everything else: tokens, noise, neutral
+BLUE_D = "#2E5A8C"                # darker primary for text on light fill
+ORANGE_D = "#B86A22"              # darker accent for text
+EV_ON = ORANGE[0]                 # event polarity +
+EV_OFF = BLUE[0]                  # event polarity -
+# legacy names from the first draft map onto the two hues
+PURPLE = BLUE
+GREEN = GREY
+TEAL = ORANGE
 
 FS = 16        # body label
 FS_S = 14      # small label
@@ -394,17 +397,42 @@ class Fig:
         return (x + (s if vertical else n * (s + gap) - gap),
                 y + (n * (s + gap) - gap if vertical else s))
 
-    def panel(self, x, y, w, h, label=None, title=None, fill=PANEL, rx=10,
-              stroke=None, title_size=FS_T, pad=14):
+    def panel(self, x, y, w, h, label=None, title=None, fill=WHITE, rx=8,
+              stroke=GRID, title_size=FS_T, pad=14):
         self.rect(x, y, w, h, rx=rx, fill=fill, stroke=stroke, sw=1.0)
         if title or label:
             s = (f"({label}) " if label else "") + (title or "")
             self.text(x + pad, y + pad + title_size * 0.62, s, size=title_size,
                       anchor="start", weight="bold")
 
+    def image(self, x, y, w, h, path, rx=6, fit="slice", quality=88, max_px=1400):
+        """Embed a raster image (base64 JPEG) clipped to a rounded rect."""
+        import base64
+        import io
+        from PIL import Image
+        im = Image.open(path)
+        if im.mode in ("RGBA", "LA", "P"):
+            im = im.convert("RGBA")
+            bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
+            bg.alpha_composite(im)
+            im = bg
+        im = im.convert("RGB")
+        if im.width > max_px:
+            im = im.resize((max_px, round(im.height * max_px / im.width)), Image.LANCZOS)
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=quality)
+        data = base64.b64encode(buf.getvalue()).decode()
+        cid = f"clip{len(self.defs)}"
+        self.defs.append(f'<clipPath id="{cid}"><rect x="{f(x)}" y="{f(y)}" width="{f(w)}" '
+                         f'height="{f(h)}" rx="{f(rx)}"/></clipPath>')
+        par = "xMidYMid slice" if fit == "slice" else "xMidYMid meet"
+        self.add(f'<image x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" '
+                 f'preserveAspectRatio="{par}" clip-path="url(#{cid})" '
+                 f'xlink:href="data:image/jpeg;base64,{data}"/>')
+
     # -- output
     def svg(self):
-        head = (f'<svg xmlns="http://www.w3.org/2000/svg" '
+        head = (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
                 f'viewBox="0 0 {f(self.w)} {f(self.h)}" width="{f(self.w)}" height="{f(self.h)}">')
         bg = f'<rect x="0" y="0" width="{f(self.w)}" height="{f(self.h)}" fill="{self.bg}"/>'
         defs = f"<defs>{''.join(self.defs)}</defs>" if self.defs else ""
