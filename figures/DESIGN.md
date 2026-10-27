@@ -17,7 +17,7 @@
 | --- | --- | --- |
 | 图1 (a)(b)(c) | 动态任务实拍 | AHEAD — Syed et al., 2026, arXiv:2606.02486, Fig. 1 |
 | 图2 | 四路相机画面 | π0.5 — Physical Intelligence et al., 2025, arXiv:2504.16054, Fig. 5 |
-| 图5 | 仿真背景（厨房照片） | π0.5 — arXiv:2504.16054, Fig. 6（第一张 Mock Kitchen）；运动小球、RGB 模糊帧与 DVS 事件均为仿真生成 |
+| 图5 | 仿真背景（厨房照片） | π0.5 — arXiv:2504.16054, Fig. 6（第一张 Mock Kitchen）；相机平移、飞过的小球、RGB 模糊帧与 DVS 事件均为仿真生成 |
 
 图片由 `src/fetch_assets.py` 下载到 `assets/`（不入库）；把同名文件换成你们自己的照片后重新运行脚本即可替换。
 
