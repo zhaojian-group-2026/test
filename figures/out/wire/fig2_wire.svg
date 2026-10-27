@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 730" width="1000" height="730">
+
+<rect x="0" y="0" width="1000" height="730" fill="#FFFFFF"/>
+<text x="95" y="126" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Inputs <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">o</tspan><tspan dy="4.16" font-size="11.2" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan dy="-4.16">, ℓ</tspan></text>
+<rect x="20" y="138" width="48" height="40" rx="6" fill="#FFFFFF" stroke="#8A919E" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="44" y="162.38" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic"></text>
+<text x="44" y="192" font-size="10.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">base cam</text>
+<rect x="72" y="138" width="48" height="40" rx="6" fill="#FFFFFF" stroke="#8A919E" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="96" y="162.38" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic"></text>
+<text x="96" y="192" font-size="10.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">left wrist</text>
+<rect x="124" y="138" width="48" height="40" rx="6" fill="#FFFFFF" stroke="#8A919E" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="148" y="162.38" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic"></text>
+<text x="148" y="192" font-size="10.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">right wrist</text>
+<rect x="20" y="206" width="150" height="40" rx="6" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<text x="95" y="222" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">prompt ℓ:</text>
+<text x="95" y="238" font-size="12.5" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic">"clean the bedroom"</text>
+<rect x="20" y="256" width="150" height="40" rx="6" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<text x="95" y="272" font-size="12.5" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">state <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">q</tspan><tspan dy="3.25" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan dy="-3.25"> → 256 bins</tspan></text>
+<text x="95" y="288" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">(as text tokens)</text>
+<rect x="195" y="138" width="95" height="56" rx="7" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1.3"/>
+<text x="242.5" y="161.88" font-size="14" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">SigLIP</text>
+<text x="242.5" y="178.95" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">ViT, 400M</text>
+<rect x="195" y="222" width="95" height="56" rx="7" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1.3"/>
+<text x="242.5" y="245.88" font-size="14" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Tokenizer</text>
+<text x="242.5" y="262.95" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Gemma</text>
+<path d="M172,166 L187.78,166" fill="none" stroke="#3F4652" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="195,166 186.5,161.92 186.5,170.08" fill="#3F4652"/>
+<path d="M172,232 L188.18,237.63" fill="none" stroke="#3F4652" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="195,240 188.31,233.35 185.63,241.06" fill="#3F4652"/>
+<path d="M172,276 L188.83,265.76" fill="none" stroke="#3F4652" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="195,262 185.62,262.93 189.86,269.9" fill="#3F4652"/>
+<rect x="305" y="134" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="147" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="160" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="173" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="186" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="199" width="10" height="10" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="305" y="218" width="10" height="10" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="305" y="231" width="10" height="10" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="305" y="244" width="10" height="10" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="305" y="257" width="10" height="10" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="305" y="270" width="10" height="10" rx="2" fill="#C8E6D2" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="305" y="283" width="10" height="10" rx="2" fill="#C8E6D2" stroke="#3B9A5F" stroke-width="1"/>
+<path d="M290,166 L296.34,166" fill="none" stroke="#3F4652" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303,166 295.16,162.24 295.16,169.76" fill="#3F4652"/>
+<path d="M290,250 L296.34,250" fill="none" stroke="#3F4652" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303,250 295.16,246.24 295.16,253.76" fill="#3F4652"/>
+<text x="310" y="312" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">prefix</text>
+<rect x="335" y="120" width="210" height="330" rx="10" fill="#EEE9F8" stroke="#6C4FB8" stroke-width="1.6"/>
+<text x="440" y="146" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">VLM backbone</text>
+<text x="440" y="164" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">PaliGemma · Gemma 2B</text>
+<rect x="355" y="182" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="201" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer 1</text>
+<rect x="355" y="222" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="241" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer 2</text>
+<rect x="355" y="262" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="281" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer 3</text>
+<rect x="355" y="302" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="321" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer …</text>
+<rect x="355" y="342" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="361" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer 17</text>
+<rect x="355" y="382" width="170" height="28" rx="4" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="0.9"/>
+<text x="440" y="401" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">layer 18</text>
+<path d="M318,220 L328.34,220" fill="none" stroke="#3F4652" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="335,220 327.16,216.24 327.16,223.76" fill="#3F4652"/>
+<rect x="600" y="120" width="170" height="330" rx="10" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.6"/>
+<text x="685" y="146" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Action expert</text>
+<text x="685" y="164" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">300M · same depth</text>
+<rect x="618" y="182" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="201" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">attn + adaRMSNorm(τ)</text>
+<line x1="525" y1="196" x2="618" y2="196" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<rect x="618" y="222" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="241" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">attn + adaRMSNorm(τ)</text>
+<line x1="525" y1="236" x2="618" y2="236" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<rect x="618" y="262" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="281" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">attn + adaRMSNorm(τ)</text>
+<line x1="525" y1="276" x2="618" y2="276" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<rect x="618" y="302" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="321" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">…</text>
+<line x1="525" y1="316" x2="618" y2="316" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<rect x="618" y="342" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="361" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">attn + adaRMSNorm(τ)</text>
+<line x1="525" y1="356" x2="618" y2="356" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<rect x="618" y="382" width="134" height="28" rx="4" fill="#FFFFFF" stroke="#D9772B" stroke-width="0.9"/>
+<text x="685" y="401" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">attn + adaRMSNorm(τ)</text>
+<line x1="525" y1="396" x2="618" y2="396" stroke="#5B6170" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="572.5" y="468" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">shared self-attention in every layer</text>
+<text x="572.5" y="483" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">(actions attend to prefix, not vice versa)</text>
+<rect x="622" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="638" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="654" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="670" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="686" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="702" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="718" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="734" y="502" width="12" height="12" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<text x="685" y="534" font-size="12.5" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">noisy chunk <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan dy="4.5"> + flow time τ</tspan></text>
+<path d="M685,500 L685,459.23" fill="none" stroke="#3F4652" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="685,452 680.92,460.5 689.08,460.5" fill="#3F4652"/>
+<text x="385" y="36" font-size="12.5" text-anchor="middle" fill="#3B9A5F" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">① subtask <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">ℓ̂</tspan> (autoregressive)</text>
+<text x="385" y="52" font-size="12.5" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic">"pick up the pillow"</text>
+<rect x="343" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="357" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="371" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="385" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="399" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="413" y="62" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<path d="M385,120 L385,83.22" fill="none" stroke="#3B9A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="385,76 380.92,84.5 389.08,84.5" fill="#3B9A5F"/>
+<text x="537" y="36" font-size="12.5" text-anchor="middle" fill="#6C4FB8" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">FAST tokens</text>
+<text x="537" y="52" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">(pre-training only)</text>
+<rect x="495" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<rect x="509" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<rect x="523" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<rect x="537" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<rect x="551" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<rect x="565" y="62" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#6C4FB8" stroke-width="1"/>
+<path d="M537,120 L537,82.66" fill="none" stroke="#6C4FB8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<polygon points="537,76 533.24,83.84 540.76,83.84" fill="#6C4FB8"/>
+<path d="M341,67 L318,67 Q310,67 310,75 L310,125.34" fill="none" stroke="#3B9A5F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<polygon points="310,132 313.76,124.16 306.24,124.16" fill="#3B9A5F"/>
+<text x="300" y="90" font-size="12.5" text-anchor="end" fill="#3B9A5F" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">② <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">ℓ̂</tspan> appended</text>
+<text x="300" y="105" font-size="12.5" text-anchor="end" fill="#3B9A5F" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">to the prefix</text>
+<rect x="800" y="240" width="185" height="56" rx="7" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.3"/>
+<text x="892.5" y="264.49" font-size="14" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">② velocity <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">v</tspan><tspan dy="3.64" font-size="9.8" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">θ</tspan><tspan dy="-3.64"></tspan></text>
+<text x="892.5" y="281.56" font-size="11.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Euler, 10 steps: <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.14" font-size="8.05" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan font-size="8.05" font-family="'Times New Roman', Times, 'Liberation Serif', serif">+</tspan><tspan font-size="8.05" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">δ</tspan><tspan dy="4.14" font-family="'Times New Roman', Times, 'Liberation Serif', serif"> = </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">A</tspan><tspan dy="-4.14" font-size="8.05" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan dy="4.14" font-family="'Times New Roman', Times, 'Liberation Serif', serif"> + </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">δ</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif"> </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">v</tspan><tspan dy="2.99" font-size="8.05" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">θ</tspan><tspan dy="-2.99"></tspan></text>
+<path d="M770,260 L792.77,260" fill="none" stroke="#D9772B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800,260 791.5,255.92 791.5,264.08" fill="#D9772B"/>
+<rect x="800" y="320" width="185" height="80" rx="6" fill="#FFFFFF" stroke="#8A919E" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="892.5" y="348.12" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic">action chunk <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">a</tspan><tspan dy="3.25" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">:</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">+</tspan><tspan font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">H</tspan><tspan dy="-3.25"></tspan></text>
+<text x="892.5" y="364.38" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">H = 50 (≈1 s @ 50 Hz)</text>
+<text x="892.5" y="380.62" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">joint curves over time</text>
+<path d="M892,296 L892,312.77" fill="none" stroke="#D9772B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="892,320 896.08,311.5 887.92,311.5" fill="#D9772B"/>
+<path d="M800,286 L793,286 Q786,286 786,293 L786,500 Q786,508 778,508 L760.48,508" fill="none" stroke="#D9772B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<polygon points="754,508 761.62,511.66 761.62,504.34" fill="#D9772B"/>
+<text x="794" y="490" font-size="12.5" text-anchor="start" fill="#D9772B" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">repeat 10× (τ: 0 → 1)</text>
+<rect x="10" y="562" width="330" height="160" rx="10" fill="#F6F7F9"/>
+<text x="24" y="587.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Attention mask (blockwise)</text>
+<rect x="30" y="597" width="290" height="92" rx="6" fill="#FFFFFF" stroke="#8A919E" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="175" y="639.25" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-style="italic">3×3 block matrix</text>
+<text x="175" y="655.5" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">[images+prompt+state | <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">ℓ̂</tspan> tokens | action tokens]</text>
+<text x="175" y="710" font-size="10.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">■ attend  □ masked: prefix bidirectional, text causal</text>
+<rect x="350" y="562" width="640" height="160" rx="10" fill="#F6F7F9"/>
+<text x="364" y="587.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Training &amp; inference</text>
+<rect x="365" y="597" width="300" height="105" rx="7" fill="#EEE9F8" stroke="#6C4FB8" stroke-width="1.3"/>
+<text x="515" y="630.12" font-size="14" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Pre-training (VLM only)</text>
+<text x="515" y="647.21" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">robot data → FAST tokens + subtask text</text>
+<text x="515" y="662.46" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">web data: captioning, VQA, detection</text>
+<text x="515" y="677.71" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">loss: next-token cross-entropy</text>
+<rect x="675" y="597" width="300" height="105" rx="7" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.3"/>
+<text x="825" y="630.12" font-size="14" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Post-training (+ action expert)</text>
+<text x="825" y="647.21" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">flow matching on continuous chunks</text>
+<text x="825" y="662.46" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve"><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">L</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif"> = </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">L</tspan><tspan dy="3.25" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">CE</tspan><tspan dy="-3.25" font-family="'Times New Roman', Times, 'Liberation Serif', serif"> + </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">α</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif"> </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">L</tspan><tspan dy="3.25" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">FM</tspan><tspan dy="-3.25"></tspan></text>
+<text x="825" y="677.71" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">inference: ① subtask → ② actions</text>
+</svg>

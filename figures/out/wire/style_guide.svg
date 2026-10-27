@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+
+<rect x="0" y="0" width="1000" height="560" fill="#FFFFFF"/>
+<text x="20" y="32" font-size="20" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Unified visual style for Figs. 1–5</text>
+<text x="20" y="52" font-size="14" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">All figures: 1000-unit canvas = 7.0 in (double column); Arial for text, Times italic for math; light fill + saturated stroke for modules.</text>
+<rect x="15" y="66" width="470" height="200" rx="10" fill="#F6F7F9"/>
+<text x="29" y="91.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Semantic palette</text>
+<rect x="30" y="106" width="34" height="34" rx="6" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1.6"/>
+<rect x="70" y="111" width="10" height="24" rx="2" fill="#2F6DB5"/>
+<text x="88" y="121" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Perception / vision</text>
+<text x="88" y="137" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">images, cameras, encoders</text>
+<rect x="260" y="106" width="34" height="34" rx="6" fill="#EEE9F8" stroke="#6C4FB8" stroke-width="1.6"/>
+<rect x="300" y="111" width="10" height="24" rx="2" fill="#6C4FB8"/>
+<text x="318" y="121" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Slow system / VLM</text>
+<text x="318" y="137" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">reasoning, planning</text>
+<rect x="30" y="154" width="34" height="34" rx="6" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.6"/>
+<rect x="70" y="159" width="10" height="24" rx="2" fill="#D9772B"/>
+<text x="88" y="169" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Fast system / action</text>
+<text x="88" y="185" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">action expert, execution</text>
+<rect x="260" y="154" width="34" height="34" rx="6" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1.6"/>
+<rect x="300" y="159" width="10" height="24" rx="2" fill="#3B9A5F"/>
+<text x="318" y="169" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Language / state tokens</text>
+<text x="318" y="185" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">prompt, proprioception</text>
+<rect x="30" y="202" width="34" height="34" rx="6" fill="#DFF2F1" stroke="#178A87" stroke-width="1.6"/>
+<rect x="70" y="207" width="10" height="24" rx="2" fill="#178A87"/>
+<text x="88" y="217" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Spiking / neuromorphic</text>
+<text x="88" y="233" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">SNN, LIF neurons</text>
+<rect x="260" y="202" width="34" height="34" rx="6" fill="#EEF0F3" stroke="#8A919E" stroke-width="1.6"/>
+<rect x="300" y="207" width="10" height="24" rx="2" fill="#8A919E"/>
+<text x="318" y="217" font-size="14" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Noise / neutral</text>
+<text x="318" y="233" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">ε, inactive, background</text>
+<circle cx="36" cy="252" r="5" fill="#D6453D"/>
+<circle cx="50" cy="252" r="5" fill="#2F5FC4"/>
+<text x="62" y="257" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">event polarity ON / OFF</text>
+<rect x="232" y="246" width="22" height="12" rx="3" fill="none" stroke="#C8423B" stroke-width="1.6" stroke-dasharray="4 3"/>
+<text x="262" y="257" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">caution / key constraint (red, dashed)</text>
+<rect x="500" y="66" width="485" height="200" rx="10" fill="#F6F7F9"/>
+<text x="514" y="91.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Typography</text>
+<text x="516" y="120" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">(a) Panel title — 9 pt bold</text>
+<text x="516" y="146" font-size="16" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Module label — 8 pt bold</text>
+<text x="516" y="168" font-size="14" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Secondary text — 7 pt, grey</text>
+<text x="516" y="188" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Annotation — 6.3 pt (minimum size)</text>
+<text x="516" y="222" font-size="17" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Math:  <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">x</tspan><tspan dy="4.42" font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan dy="-4.42" font-family="'Times New Roman', Times, 'Liberation Serif', serif"> = (1-</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif">)</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">ε</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif"> + </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τA</tspan>,   <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">v</tspan><tspan dy="4.42" font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">θ</tspan><tspan dy="-4.42" font-family="'Times New Roman', Times, 'Liberation Serif', serif">(</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">x</tspan><tspan dy="4.42" font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan dy="-4.42" font-family="'Times New Roman', Times, 'Liberation Serif', serif">, </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">τ</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif"> | </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">o</tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif">)</tspan>,   <tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">a</tspan><tspan dy="4.42" font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif">:</tspan><tspan font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif">+</tspan><tspan font-size="11.9" font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">H</tspan><tspan dy="-4.42"></tspan></text>
+<text x="516" y="250" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Convention used everywhere: τ = 0 noise → τ = 1 action</text>
+<rect x="15" y="280" width="470" height="265" rx="10" fill="#F6F7F9"/>
+<text x="29" y="305.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Components</text>
+<rect x="30" y="320" width="130" height="50" rx="7" fill="#EEE9F8" stroke="#6C4FB8" stroke-width="1.3"/>
+<text x="95" y="340.46" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">VLM backbone</text>
+<text x="95" y="359.98" font-size="14" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">Gemma 2B</text>
+<rect x="175" y="320" width="130" height="50" rx="7" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.3"/>
+<text x="240" y="340.46" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Action expert</text>
+<text x="240" y="359.98" font-size="14" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">300M, flow matching</text>
+<rect x="320" y="320" width="150" height="50" rx="7" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1.3"/>
+<text x="395" y="340.46" font-size="16" text-anchor="middle" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Vision encoder</text>
+<text x="395" y="359.98" font-size="14" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">SigLIP</text>
+<rect x="30" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="44" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="58" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="72" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="86" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<rect x="100" y="392" width="11" height="11" rx="2" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1"/>
+<text x="120" y="402" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">image tokens</text>
+<rect x="260" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="274" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="288" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="302" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="316" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<rect x="330" y="392" width="11" height="11" rx="2" fill="#E4F3E9" stroke="#3B9A5F" stroke-width="1"/>
+<text x="350" y="402" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">text / state tokens</text>
+<rect x="30" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<rect x="44" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<rect x="58" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<rect x="72" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<rect x="86" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<rect x="100" y="416" width="11" height="11" rx="2" fill="#FCEEDF" stroke="#D9772B" stroke-width="1"/>
+<text x="120" y="426" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">action tokens</text>
+<rect x="260" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="274" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="288" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="302" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="316" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<rect x="330" y="416" width="11" height="11" rx="2" fill="#EEF0F3" stroke="#8A919E" stroke-width="1"/>
+<text x="350" y="426" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">noisy action tokens</text>
+<path d="M30,462 L122.78,462" fill="none" stroke="#3F4652" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="130,462 121.5,457.92 121.5,466.08" fill="#3F4652"/>
+<text x="140" y="466" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">data flow</text>
+<path d="M30,484 L122.78,484" fill="none" stroke="#5B6170" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<polygon points="130,484 121.5,479.92 121.5,488.08" fill="#5B6170"/>
+<text x="140" y="488" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">feedback / optional</text>
+<path d="M260,462 L349.97,462" fill="none" stroke="#6C4FB8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="360,462 348.2,456.34 348.2,467.66" fill="#6C4FB8"/>
+<text x="370" y="466" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">interface (thick)</text>
+<path d="M260,484 L352.59,484" fill="none" stroke="#D9772B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 3"/>
+<polygon points="360,484 351.28,479.81 351.28,488.19" fill="#D9772B"/>
+<text x="370" y="488" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">planned motion</text>
+<circle cx="40" cy="520" r="8.5" fill="#2F6DB5"/>
+<text x="40" y="524.32" font-size="12" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">1</text>
+<circle cx="64" cy="520" r="8.5" fill="#6C4FB8"/>
+<text x="64" y="524.32" font-size="12" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">2</text>
+<circle cx="88" cy="520" r="8.5" fill="#D9772B"/>
+<text x="88" y="524.32" font-size="12" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">3</text>
+<text x="110" y="524" font-size="12.5" text-anchor="start" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">stage badges: perception · planning · execution</text>
+<rect x="500" y="280" width="485" height="265" rx="10" fill="#F6F7F9"/>
+<text x="514" y="305.16" font-size="18" text-anchor="start" fill="#1F2430" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve" font-weight="bold">Illustration style (flat, side view)</text>
+<line x1="515" y1="527" x2="970" y2="527" stroke="#C9CED6" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="520" y="455" width="170" height="12" rx="6" fill="#B9C0CB" stroke="#3A404C" stroke-width="1.1"/>
+<circle cx="526" cy="461" r="5" fill="#7B8494" stroke="#3A404C" stroke-width="0.9"/>
+<circle cx="684" cy="461" r="5" fill="#7B8494" stroke="#3A404C" stroke-width="0.9"/>
+<line x1="540" y1="467" x2="540" y2="527" stroke="#3A404C" stroke-width="2.4" stroke-linecap="butt"/>
+<line x1="670" y1="467" x2="670" y2="527" stroke="#3A404C" stroke-width="2.4" stroke-linecap="butt"/>
+<rect x="545" y="433" width="22" height="22" rx="3" fill="#E4EEF9" stroke="#2F6DB5" stroke-width="1.2"/>
+<rect x="600" y="433" width="22" height="22" rx="3" fill="#FCEEDF" stroke="#D9772B" stroke-width="1.2"/>
+<rect x="596" y="429" width="30" height="30" rx="4" fill="none" stroke="#2F6DB5" stroke-width="1.1" stroke-dasharray="3 2"/>
+<path d="M598,420 L620.96,420" fill="none" stroke="#2F6DB5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="628,420 619.72,416.03 619.72,423.97" fill="#2F6DB5"/>
+<text x="590" y="424" font-size="14" text-anchor="middle" fill="#2F6DB5" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve"><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">v̂</tspan></text>
+<rect x="650" y="433" width="22" height="22" rx="3" fill="none" stroke="#D9772B" stroke-width="1.2" stroke-dasharray="3 2"/>
+<g transform="translate(585,335) rotate(90) scale(1)">
+<rect x="-14" y="-9" width="22" height="18" rx="3" fill="#2E3440"/>
+<rect x="8" y="-6" width="7" height="12" rx="1.5" fill="#2E3440"/>
+<circle cx="15" cy="0" r="4.2" fill="#2F6DB5" stroke="#11151C" stroke-width="1"/>
+<circle cx="15" cy="0" r="1.6" fill="#DCE8F6"/>
+</g>
+<polygon points="585,350 557.64,425.18 612.36,425.18" fill="#2F6DB5" fill-opacity="0.18"/>
+<line x1="585" y1="350" x2="557.64" y2="425.18" stroke="#2F6DB5" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3" opacity="0.7"/>
+<line x1="585" y1="350" x2="612.36" y2="425.18" stroke="#2F6DB5" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3" opacity="0.7"/>
+<rect x="765" y="458" width="30" height="69" rx="3" fill="#A3ABB8" stroke="#3A404C" stroke-width="1.1"/>
+<polygon points="764,459 796,459 791,446 769,446" fill="#A3ABB8" stroke="#3A404C" stroke-width="1.1" stroke-linejoin="round"/>
+<path d="M780,452 L727,403.27 L661,404 L661,426" fill="none" stroke="#3A404C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M780,452 L727,403.27 L661,404 L661,426" fill="none" stroke="#D9DEE5" stroke-width="9.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="780" cy="452" r="8.06" fill="#5E6776" stroke="#3A404C" stroke-width="1"/>
+<circle cx="780" cy="452" r="3.39" fill="#C5CBD4"/>
+<circle cx="727" cy="403.27" r="8.06" fill="#5E6776" stroke="#3A404C" stroke-width="1"/>
+<circle cx="727" cy="403.27" r="3.39" fill="#C5CBD4"/>
+<circle cx="661" cy="404" r="6.5" fill="#5E6776" stroke="#3A404C" stroke-width="1"/>
+<circle cx="661" cy="404" r="2.73" fill="#C5CBD4"/>
+<line x1="650" y1="426" x2="672" y2="426" stroke="#3A404C" stroke-width="5" stroke-linecap="round"/>
+<line x1="654" y1="426" x2="654" y2="439" stroke="#3A404C" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="668" y1="426" x2="668" y2="439" stroke="#3A404C" stroke-width="3.6" stroke-linecap="round"/>
+<g transform="translate(815,335) rotate(15) scale(1)">
+<rect x="-14" y="-9" width="22" height="18" rx="3" fill="#1D4E4C"/>
+<rect x="8" y="-6" width="7" height="12" rx="1.5" fill="#1D4E4C"/>
+<circle cx="15" cy="0" r="4.2" fill="#178A87" stroke="#11151C" stroke-width="1"/>
+<circle cx="15" cy="0" r="1.6" fill="#DCE8F6"/>
+<rect x="-11" y="-6" width="8" height="4" rx="1" fill="#D6453D"/>
+<rect x="-11" y="1" width="8" height="4" rx="1" fill="#6E9BFF"/>
+</g>
+<text x="815" y="362" font-size="12.5" text-anchor="middle" fill="#5B6170" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve">event cam</text>
+<circle cx="850" cy="313.2" r="3.2" fill="#2F6DB5" opacity="0.35"/>
+<circle cx="868" cy="343.87" r="3.2" fill="#2F6DB5" opacity="0.5"/>
+<circle cx="886" cy="366.77" r="3.2" fill="#2F6DB5" opacity="0.6499999999999999"/>
+<circle cx="904" cy="381.89" r="3.2" fill="#2F6DB5" opacity="0.7999999999999999"/>
+<circle cx="922" cy="389.23" r="6" fill="#E9B949" stroke="#9A7419" stroke-width="1"/>
+<path d="M928,389 Q950,392 958,420" fill="none" stroke="#6C4FB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<circle cx="958" cy="424" r="7" fill="none" stroke="#6C4FB8" stroke-width="1.4"/>
+<text x="958" y="446" font-size="12.5" text-anchor="middle" fill="#6C4FB8" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" xml:space="preserve"><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">p</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">*</tspan><tspan dy="4.5" font-family="'Times New Roman', Times, 'Liberation Serif', serif">, </tspan><tspan font-family="'Times New Roman', Times, 'Liberation Serif', serif" font-style="italic">t</tspan><tspan dy="-4.5" font-size="8.75" font-family="'Times New Roman', Times, 'Liberation Serif', serif">*</tspan><tspan dy="4.5"></tspan></text>
+</svg>
